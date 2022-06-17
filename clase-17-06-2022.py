@@ -46,3 +46,49 @@ print(sumar(a,b))
 # Len es una funcion para medir el largo de un sting
 nombre='juan'
 print(len(nombre))
+
+def varios_valores(*args): #arg es una funcion flexible en donde puedo ingresar varios tipos de argumentos.
+    for a in args: # aca asignamos las funciones "a" y "args" dentro de un ciclo.
+        print(a)
+
+varios_valores(4.5, 'juan', [1,2,3,4,5])
+
+
+# Inicio de importaciond de funciones
+
+import os
+    menu(): # funcion menú
+    os.system('cls')
+    print('Menú')
+    print('1) Agregar')
+    print('2) Eliminar')
+    print('3) Salir')
+    op=input('Ingrese Opción')
+    return op #
+
+# Aca definimos las funciones en las cuales del agregamos un print:
+def agregar():
+    print('eligio agregar')
+
+def elimiar():
+    print('eligio agregar')
+
+def error400():
+    print('Opción no válida')
+
+#Importamos la funcion desde otro archivo .py:
+
+import funciones as fn
+
+#Inicio de cliclo:
+while True:
+    op = fn.menu() # debo agregar fn a cada funcion que estamos importando
+    if op=='1':
+        fn.agregar()
+    elif op =='2':
+        fn.eliminar()
+    elif op =='9':
+        break
+    else:
+        fn.error400()
+    input()

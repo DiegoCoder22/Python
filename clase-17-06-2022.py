@@ -13,5 +13,36 @@ def saludar(): # cramos la duncion
 
 saludar() # aca estamos ejecutando la funcion
 
+
 # 2) sin argumentos y con retorno #
-def 
+def sumar(a,b):
+    a=int(input('Ingrese Valor:'))
+    b=int(input('Ingrese Valor:'))
+    c=a+b
+    return c
+
+x=sumar()
+
+# 3) con argumentos y sin retonro #
+def sumar(a,b):
+    c=a+b
+    print(f'la suma de {a} + {b} = {c}')
+
+x=int(input('Ingrese valor:'))
+x=int(input('Ingrese valor:'))
+sumar(x,y)
+
+
+# 4) con argumentos y con retorno #
+def sumar(a,b):
+    c=a+b
+    return c
+
+x=int(input('Ingrese valor:'))
+x=int(input('Ingrese valor:'))
+print(sumar(a,b))
+
+
+# Len es una funcion para medir el largo de un sting
+nombre='juan'
+print(len(nombre))

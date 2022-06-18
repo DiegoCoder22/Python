@@ -2,10 +2,11 @@
 # Son aquellas que dividen el programa en partes, considerando la parte princila y los diferentes metodos (tareas) que deben realizar.
 # Las funciones deben ser embocadas.#
 # Tipos de funciones:#
-# 1) sin argumentos y sin retornos #
+# 1) sin argumentos y sin retorno #
 # 2) sin argumentos y con retorno #
-# 3) con argumentos y sin retonro #
-# 4) con argumentos y con retonro #
+# 3) con argumentos y sin retorno #
+# 4) con argumentos y con retorno #
+
 
 # 1) sin argumentos y sin retornos:
 def saludar(): # cramos la duncion
@@ -53,9 +54,6 @@ def varios_valores(*args): #arg es una funcion flexible en donde puedo ingresar 
 
 varios_valores(4.5, 'juan', [1,2,3,4,5])
 
-
-# Inicio de importaciond de funciones
-
 import os
     menu(): # funcion menú
     os.system('cls')
@@ -78,7 +76,7 @@ def error400():
 
 #Importamos la funcion desde otro archivo .py:
 
-import funciones as fn
+import funciones as fn # FN es la variable que debo agregar para citar y activar las funciones desde otro archivo (se puede poner cualquier nombre para FN) o un alias
 
 #Inicio de cliclo:
 while True:
@@ -92,3 +90,12 @@ while True:
     else:
         fn.error400()
     input()
+
+# un nuevo ejemplo de funciones por separado
+# es mejor ponerle argumento a las funciones para garantizar que hagan lo que tengan que hacer
+
+def mostrar(a):
+    print(a)
+
+a=[1,2,3]
+mostrar()

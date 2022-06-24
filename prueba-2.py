@@ -42,7 +42,7 @@ while True:
         xpat=input('Ingrese patente:')
         if xpat in patente:
             i=patente.index(xpat)
-            print(f'{auto[0][i]} - {auto[1][i]} - {auto[2][i]} - {auto[3][i]} - {auto[4][i]} - {auto[5][i]})
+            print(f'{auto[0][i]} - {auto[1][i]} - {auto[2][i]} - {auto[3][i]} - {auto[4][i]} - {auto[5][i]}')
             print('....')
         else: #si no cumple con la condición, imprime un error...
             input('La patente ingresada no existe...')

@@ -19,41 +19,42 @@ while True:
                 input('(OK) Nombre ingresado es correcto')
                 break
             else:
-                input('(x) Nombre ingresado es incorrecto... pulse una tecla...')
+                input('(X) Nombre ingresado es incorrecto... pulse una tecla...')
             nombre.append(xnombre)
         while True: #Ciclo y validacion de Edad:
             try:
                 xedad = int(input('Ingrese edad:'))
                 if xedad>=15 and xedad<=90:
-                    input('Edad ingresada es correcta')
+                    input('(OK) Edad ingresada es correcta')
                     break
             except Exception as e:
-                input('datos ingresados tienen error....',e)
+                input('(X) datos ingresados tienen error....',e)
             edad.append(xedad)
         while True:
             xnif = input('Ingrese NIF Ciudadano:')
             if len(xnif)==8 or ((xnif[0:8].isalpha() and xnif[2:2+4].isnumeric()) or (xnif[0:4].isalpha() and xnif[4:4+2].isnumeric())):
-                input(f'NIF ingresado {xnif} es correcto')
+                input(f'(OK) NIF ingresado {xnif} es correcto')
                 break
                 nif.append(xnif)
         while True:
             xniftipo = input('Ingrese tipo -RTX, -XXY, -PEU, -03F:')
             xniftipo = xniftipo.upper()
             if xniftipo=='-RTX' or xniftipo=='-XXY' or xniftipo=='-PEU' or xniftipo=='-03F':
-                input(f'Tipo de NIF {xniftipo} ingresado es correcto.')
+                input(f'(OK) Tipo de NIF {xniftipo} ingresado es correcto.')
                 break
             else:
-                input('NIF no válido, Precione tencla para intentar nuevamente....')
+                input('(X) NIF no válido, Precione tencla para intentar nuevamente....')
             niftipo.append(xniftipo)
             reg.append('reg:')
     elif op=='2':
         xnif=input('Ingrese NIF Ciudadano:')
+        reg
         if xnif in nif:
             i=nif.index(xnif)
-            reg[i]=reg[i]+xfec+"-"+xobs #Al registro le sumo la fecha y las observaciones... es un acumulador
-            input('OK...pulse una tecla para continuar...') #cumple la validacion...
+            reg[i]=reg[i]+xnif+"-"+xniftipo 
+            input('OK...pulse una tecla para continuar...')
         else:
-            input('Patente no existente...')
+            input('(X) NIF no existente...')
     elif op=='3':
         xnif=input('Ingrese patente:')
         if nif in nif_eu:

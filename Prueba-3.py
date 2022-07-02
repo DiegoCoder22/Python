@@ -1,4 +1,3 @@
-import numpy as np
 import os
 
 nif=list();niftipo=list();nombre=list();edad=list();reg=list()
@@ -55,9 +54,9 @@ while True:
         cnif=input("Ingrese NIF del ciudadano: ")
         for i in range(len(nif)):
             if cnif in nif:
-                print("NIF: ", nif[i])
-                print("NOMBRE: ", nombres[i])
-                print("EDAD: ", edades[i])
+                print("NIF Ciudadano: ", nif[i])
+                print("Nombre del Ciudadano: ", nombres[i])
+                print("Edad del Ciudadano: ", edades[i])
                 input("INGRESE ENTER PARA CONTINUAR")
                 break
             else:

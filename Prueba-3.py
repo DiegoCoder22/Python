@@ -36,7 +36,7 @@ while True:
             edad.append(xedad)
         while True: #Ciclo y validacion de NIF:
             xnif = input('Ingrese NIF Ciudadano:')
-            if len(xnif)==12 and (ndif[0:8].isnumeric() and ndif[9:12].isalpha()):
+            if len(xnif)==8 or ((xnif[0:8].isalpha() and xnif[2:2+4].isnumeric()) or (xnif[0:4].isalpha() and xnif[4:4+2].isnumeric())):
                 input(f'(OK) NIF ingresado {xnif} es correcto')
                 nif.append(xnif)
                 break   
@@ -44,23 +44,25 @@ while True:
             xniftipo = input('Ingrese tipo -RTX, -XXY, -PEU, -03F:')
             xniftipo = xniftipo.upper()
             if xniftipo=='-RTX' or xniftipo=='-XXY' or xniftipo=='-PEU' or xniftipo=='-03F':
-                input(f'(OK) Tipo de NIF {xniftipo} ingresado es correcto.')
+                input(f'(OK) El de NIF: {xnif} y el NIF Tipo: {xniftipo} ingresados son correctos.')
                 break
             else:
                 input('(X) NIF no válido, Precione tencla para intentar nuevamente....')
             niftipo.append(xniftipo)
             reg.append('reg:')
     elif op=='2': #Opcion 2
-        cnif=input("Ingrese NIF del ciudadano: ")
+        cnif=input('Ingrese NIF del ciudadano: ')
         for i in range(len(nif)):
             if cnif in nif:
-                print("NIF Ciudadano: ", nif[i])
-                print("Nombre del Ciudadano: ", nombres[i])
-                print("Edad del Ciudadano: ", edades[i])
-                input("INGRESE ENTER PARA CONTINUAR")
+                print('Se ha encontrado al Ciudadano consutado: ')
+                print('Datos del ciudadano: ')
+                print('NIF: ', nif[i])
+                print('Nombre: ', nombre[i])
+                print('Edad: ', edad[i])
+                input('Ingrese una tecla para continuar...')
                 break
             else:
-                print("(X) El NIF ingresado no existe... intente nuevamente...")
+                print('El NIF ingresado no existe en el sistema... intente nuevamente...')
     elif op=='3':  #Opcion 3
         xnif=input('Imprimir certificado:')
         nif, niftipo, nombre, edad, reg

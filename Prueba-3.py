@@ -1,7 +1,7 @@
 import os
-
 #nif=list();niftipo=list();nombre=list();edad=list();reg=list()
 #ciudadano=[nif, niftipo, nombre, edad, reg]
+
 nif=[]
 niftipo=[]
 nombre=[]

@@ -1,4 +1,7 @@
-from prueba-3-fn import
+from prueba-3-fn import agregar
+from prueba-3-fn import Buscar
+from prueba-3-fn import Imprimir
+from prueba-3-fn import salir
 import os
 #nif=list();niftipo=list();nombre=list();edad=list();reg=list()
 #ciudadano=[nif, niftipo, nombre, edad, reg]
@@ -8,9 +11,6 @@ niftipo=[]
 nombre=[]
 edad=[]
 reg=[]
-
-def salida():
-    print("Gracias por utilizar el registro de ciudadanos de la Unión Europea de España, de Andalucía.")
 
 while True:
     def menu():

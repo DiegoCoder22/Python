@@ -35,3 +35,39 @@ def agregar():
                     break
                 else:
                     input('(X) NIF no válido, Precione tencla para intentar nuevamente....')
+
+
+def buscar():
+    cnif=input('Ingrese NIF del ciudadano: ')
+        for i in range(len(nif)):
+            if cnif in nif:
+                print('')
+                print('Se ha encontrado al Ciudadano consutado: ')
+                print('')
+                print('Datos del ciudadano: ')
+                print('NIF: ', nif[i])
+                print('Tipo NIF: ', niftipo[i])
+                print('Nombre: ', nombre[i])
+                print('Edad: ', edad[i])
+                print('')
+                input('Ingrese una tecla para continuar...')
+                break
+            else:
+                print('El NIF ingresado no existe en el sistema... intente nuevamente...')
+
+def imprimir():
+    xnif=input('Imprimir certificado:')
+        nif, niftipo, nombre, edad, reg
+        if xnif in nif:
+            i=nif.index(xnif)
+            print(f'El NIF es: {nif}')
+            print(f'El NIF Tipo es: {tiponif}')
+            print(f'El NIF completo es: {nif} + {tiponif}')
+            print(f'El Nombre del ciudadano es: {nombre}')
+            print(f'La edad del ciudadano es: {edad}')
+            input('pulse una tecla para continuar....')
+        else:
+            input('El NIF no existe...')
+
+def salida():
+    print("Gracias por utilizar el registro de ciudadanos de la Unión Europea de España, de Andalucía.")

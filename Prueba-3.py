@@ -1,3 +1,4 @@
+from prueba-3-fn import
 import os
 #nif=list();niftipo=list();nombre=list();edad=list();reg=list()
 #ciudadano=[nif, niftipo, nombre, edad, reg]
@@ -60,7 +61,6 @@ while True:
                 break
             else:
                 input('(X) NIF no válido, Precione tencla para intentar nuevamente....')
-        contador=contador+1
     elif op=='2': #Opcion 2
         cnif=input('Ingrese NIF del ciudadano: ')
         for i in range(len(nif)):

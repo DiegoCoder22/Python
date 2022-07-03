@@ -1,3 +1,13 @@
+def menu():
+    print('')
+    print('Bienvenido al registro de ciudadanos de la Unión Europea de España, de Andalucía')
+    print('Seleccione una opción:')
+    print('')
+    print('1) Ingrese ciudadano')
+    print('2) Buscar ciudadano')
+    print('3) Imprimir certificado')
+    print('4) Salir')
+
 def agregar():
     while True: #Ciclo y validacion de nombre:
         xnombre = input(f'Ingrese su Nombre {contador}: ')

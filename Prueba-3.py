@@ -16,6 +16,7 @@ while True:
         print('')
         print('Bienvenido al registro de ciudadanos de la Unión Europea de España, de Andalucía')
         print('Seleccione una opción:')
+        print('')
         print('1) Ingrese ciudadano')
         print('2) Buscar ciudadano')
         print('3) Imprimir certificado')
@@ -65,11 +66,13 @@ while True:
             if cnif in nif:
                 print('')
                 print('Se ha encontrado al Ciudadano consutado: ')
+                print('')
                 print('Datos del ciudadano: ')
                 print('NIF: ', nif[i])
-                print('NIF: ', niftipo[i])
+                print('Tipo NIF: ', niftipo[i])
                 print('Nombre: ', nombre[i])
                 print('Edad: ', edad[i])
+                print('')
                 input('Ingrese una tecla para continuar...')
                 break
             else:

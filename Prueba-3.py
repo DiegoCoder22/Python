@@ -6,7 +6,7 @@ nif=[]
 niftipo=[]
 nombre=[]
 edad=[]
-reg=[nif, niftipo, nombre, edad]
+reg=[]
 
 def salida():
     print("Gracias por utilizar el registro de ciudadanos de la Unión Europea de España, de Andalucía.")
@@ -25,7 +25,7 @@ while True:
     op = input('Ingrese opción:')
     if op=='1': #Opcion 1
         while True: #Ciclo y validacion de nombre:
-            xnombre = input('Ingrese su Nombre:')
+            xnombre = input(f'Ingrese su Nombre {contador}: ')
             if len(xnombre)>=8:
                 input('(OK) Nombre ingresado es correcto')
                 nombre.append(xnombre)
@@ -60,6 +60,7 @@ while True:
                 break
             else:
                 input('(X) NIF no válido, Precione tencla para intentar nuevamente....')
+        contador=contador+1
     elif op=='2': #Opcion 2
         cnif=input('Ingrese NIF del ciudadano: ')
         for i in range(len(nif)):

@@ -1,7 +1,5 @@
-from prueba-3-fn import agregar
-from prueba-3-fn import Buscar
-from prueba-3-fn import Imprimir
-from prueba-3-fn import salir
+from funciones import agregar, buscar,  imprimir, salir
+
 import os
 #nif=list();niftipo=list();nombre=list();edad=list();reg=list()
 #ciudadano=[nif, niftipo, nombre, edad, reg]

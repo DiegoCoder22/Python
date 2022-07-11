@@ -53,6 +53,6 @@ while continuar:
 
     elif opcion == 4:
 
-    elif opcion ==5:
+    elif opcion == 5:
             salir()
             continuar = False

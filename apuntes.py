@@ -46,5 +46,13 @@ while continuar:
         print('--Asientos disponibles = 0')
         print('--Asientos Comprados = X')
         print('-----------------------------')
-        
+
     elif opcion == 2:
+
+    elif opcion == 3:
+
+    elif opcion == 4:
+
+    elif opcion ==5:
+            salir()
+            continuar = False
